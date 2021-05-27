@@ -1,0 +1,33 @@
+.navbar-container{
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    padding-top: 2vh;
+}
+
+.navbar-list-container{
+    width: 100%;
+}
+
+.navbar-list{
+    width: 70%;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    list-style: none;
+}
+li{
+    cursor: pointer;
+}
+
+.logo-wrapper{
+    max-height: 5vh;
+    max-width: 10vh;
+    border-radius: 100px;
+}
+
+.logo-wrapper img{
+    height: 5vh;
+    width: 10vh;
+    border-radius: 100px;
+
+}
