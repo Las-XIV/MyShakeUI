@@ -1,18 +1,19 @@
-import React,{ useRef, useLayoutEffect } from 'react'
+import React, { useRef, useLayoutEffect } from 'react'
+import { SocialIcon } from 'react-social-icons';
 import { TweenMax } from 'gsap'
 import Whey from '../../assets/whey.png'
 import Mass from '../../assets/mass.png'
 import '../../theme/style/home.css'
-const Home = (props) =>{
+const Home = (props) => {
     let whey = useRef(null)
     let mass = useRef(null)
-    useLayoutEffect(()=>{
-        TweenMax.from(whey,1.6,{
+    useLayoutEffect(() => {
+        TweenMax.from(whey, 1.6, {
             x: "40vw", opacity: 0
-          }).then(()=>{
-              TweenMax.fromTo(whey,1,{
-                  rotation: 0
-              },{
+        }).then(() => {
+            TweenMax.fromTo(whey, 1, {
+                rotation: 0
+            }, {
                 // rotationX: -5,
                 rotateX: 15,
                 delay: 1,
@@ -20,13 +21,13 @@ const Home = (props) =>{
                 // repeatDelay: 1,
                 yoyo: true,
                 // immediateRender:false
-              })
-          })
-        TweenMax.from(mass,1.6,{
+            })
+        })
+        TweenMax.from(mass, 1.6, {
             x: "40vw", opacity: 0
-          }).delay(0.5)
-    },[])
-    return(
+        }).delay(0.5)
+    }, [])
+    return (
         <div className='home-container'>
             <section className='home-description'>
                 <div>
@@ -37,25 +38,32 @@ const Home = (props) =>{
                         <h1>STRONGER</h1>
                     </div>
                     <div>
-                        <p>lorem lorem lorem lorem lorem</p>
+                        <p>The Best Source For The Best Athletes .</p>
                     </div>
                     <div>
-                        <span>EXPLORE NOW</span>
-                        <span>Discount *</span>
+                        <div className='explore-container'>
+                            <h2 className='explore'>EXPLORE NOW</h2>
+                        </div>
+                        {/* <span>Discount *</span> */}
                     </div>
                 </div>
             </section>
             <section className="img-container">
                 <div className="whey">
-                <img src={Whey} ref={el=> whey = el}/>
-                <div className="mass">
-                <img src={Mass} ref={el=> mass = el}/>
-                </div>
+                    <img src={Whey} ref={el => whey = el} />
+                    <div className="mass">
+                        <img src={Mass} ref={el => mass = el} />
+                    </div>
                 </div>
 
             </section>
-            <section>
-                
+            <section className='home-social'>
+                <div></div>
+                <div className='social-icons'>
+                    <SocialIcon url="https://www.twitter.com/" bgColor='rgba(255, 255, 255, 0.748)' />
+                    <SocialIcon url="https://www.facebook.com/" bgColor='rgba(255, 255, 255, 0.748)' />
+                    <SocialIcon url="https://www.gmail.com" bgColor='rgba(255, 255, 255, 0.748)' />
+                </div>
             </section>
         </div>
     )
