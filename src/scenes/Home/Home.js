@@ -37,7 +37,7 @@ const Home = (props) => {
             <section className='home-description'>
                 <div ref={el=> description = el}>
                     <div>
-                        <h4>Healthy &</h4>
+                        <h4>Healthier &</h4>
                     </div>
                     <div>
                         <h1>STRONGER</h1>
