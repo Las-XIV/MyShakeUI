@@ -5,6 +5,7 @@ const Navbar = (props) =>{
         <div className='navbar-container'>
             <section>
                 <div className='logo-wrapper'>
+                    MyShake
                 </div>
             </section>
             <section className='navbar-list-container'>
