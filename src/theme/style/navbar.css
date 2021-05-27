@@ -1,3 +1,8 @@
+@font-face {
+    font-family: lelushka;
+    src: url(../font//lelushka-dd3m.otf);
+}
+
 .navbar-container{
     display: grid;
     grid-template-columns: 60vw 40vw;
@@ -17,17 +22,29 @@
 }
 li{
     cursor: pointer;
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .logo-wrapper{
     max-height: 5vh;
     max-width: 10vh;
     border-radius: 100px;
+    font-family: lelushka;
+    font-size: 20px;
+    margin-left: 5vw;
+    margin-top: 1vh;
+    border: 2px solid black;
+    border-style: dotted;
+    display: grid;
+    place-items: center;
 }
 
 .logo-wrapper img{
+    display: inline;
     height: 5vh;
-    width: 10vh;
+    /* width: 10vw; */
     border-radius: 100px;
-
 }

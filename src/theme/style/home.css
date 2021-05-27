@@ -13,6 +13,11 @@
     src: url(../font/ClementePDab-HairlineItalic.ttf);
 }
 
+@font-face {
+    font-family: lelushka;
+    src: url(../font//lelushka-dd3m.otf);
+}
+
 
 .home-container{
     display: grid;
@@ -61,12 +66,43 @@
     font-family: sacramento;
     font-size: 40px;
     position: relative;
-    top: 10vh
+    top: 10vh;
+    color: rgba(255, 196, 0, 0.843);
 }
 
 .home-description p{
-    font-family: clementPDab;
+    font-family: helvic;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 20px;
+    position: relative; 
+    top: -5vh;
 }
 
+.home-description .explore{
+    cursor: pointer;
+    height: 100%;
+    background-color: #843f3fe5;
+    border-radius: 6px;
+    color: white;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.explore-container{
+    width: 50%;
+    height: 7vh;
+
+}
+
+.home-social{
+    display: grid;
+    grid-template-rows: 90% auto;
+}
+
+.social-icons{
+    display: grid;
+    grid-template-rows: 40% 40% auto;
+    margin-right: 0;
+}
