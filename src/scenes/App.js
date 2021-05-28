@@ -9,23 +9,20 @@ import '../theme/style/app.css'
 
 const App = (props) => {
   return (
-    <div className="container">
+    <div className="app-container">
       <Router>
         <section className='header'>
           <Navbar />
         </section>
         <section className='main'>
           <Switch>
-            <Route to='/'>
+            <Route path='/home'>
               <Home />
             </Route>
-            <Route to='/home'>
-              <Home />
-            </Route>
-            <Route to='/products'>
+            <Route path='/products'>
               <Products />
             </Route>
-            <Route to='/about'>
+            <Route path='/about'>
               <About />
             </Route>
           </Switch>
