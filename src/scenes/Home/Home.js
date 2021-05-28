@@ -1,10 +1,12 @@
-import React, { useRef, useLayoutEffect, useReducer } from 'react'
+import React, { useRef, useLayoutEffect } from 'react'
+import { useHistory } from 'react-router-dom'
 import { SocialIcon } from 'react-social-icons';
 import { TweenMax } from 'gsap'
 import Whey from '../../assets/whey.png'
 import Mass from '../../assets/mass.png'
 import '../../theme/style/home.css'
 const Home = (props) => {
+    let history = useHistory()
     let whey = useRef(null)
     let mass = useRef(null)
     let description = useRef(null)
@@ -46,7 +48,7 @@ const Home = (props) => {
                         <p>The Best Source For The Best Athletes .</p>
                     </div>
                     <div>
-                        <div className='explore-container'>
+                        <div className='explore-container' onClick={()=> history.push('/products')}>
                             <h2 className='explore'>EXPLORE NOW</h2>
                         </div>
                     </div>
