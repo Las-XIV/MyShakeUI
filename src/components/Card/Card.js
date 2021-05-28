@@ -1,6 +1,6 @@
 import React from 'react'
 import { ProductCard } from 'react-ui-cards'
-
+import '../../theme/style/cardStyle/card.css'
 const Card = (props) =>{
     return(
      <>
