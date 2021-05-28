@@ -111,3 +111,8 @@
     grid-template-rows: 40% 40% auto;
     margin-right: 0;
 }
+
+.social-icon:hover{
+    background-color: rgba(255, 196, 0, 0.843);
+    border-radius: 50%;
+}

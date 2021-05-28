@@ -61,7 +61,7 @@ li:hover{
     border-style: dotted;
     display: grid;
     place-items: center;
-    background-color: #1abc9cd0;
+    background-color: rgba(255, 196, 0, 0.673);
     color: white;
     transition: 0.5s;
 }
@@ -69,6 +69,36 @@ li:hover{
 .logo-wrapper img{
     display: inline;
     height: 5vh;
-    /* width: 10vw; */
     border-radius: 100px;
+}
+
+.products-div{
+    display: grid;
+    grid-template-rows: 5vh auto;
+}
+
+.products-list{
+
+    display: none;
+}
+
+.products-div:hover .products-list{
+    position: fixed;
+    top: 7%;
+    display: grid;
+    grid-template-columns: auto ;
+    height: 20vh;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-align: center;
+    padding: 1%;
+    font-size: 12px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.537), rgba(255, 255, 255, 0.074));
+    border-radius: 5px;
+    padding-top: 2%;
+}
+
+.products-div:hover .products-list a:hover{
+    cursor: pointer;
+    color: rgba(255, 196, 0, 0.673)
 }
