@@ -66,9 +66,9 @@ const Home = (props) => {
             <section className='home-social'>
                 <div></div>
                 <div className='social-icons' ref={el=> social = el}>
-                    <SocialIcon url="https://www.twitter.com/" bgColor='rgba(255, 255, 255, 0.748)' />
-                    <SocialIcon url="https://www.facebook.com/" bgColor='rgba(255, 255, 255, 0.748)' />
-                    <SocialIcon url="https://www.gmail.com" bgColor='rgba(255, 255, 255, 0.748)' />
+                    <SocialIcon url="https://www.twitter.com/" bgColor='rgba(255, 255, 255, 0.748)'  className='social-icon'/>
+                    <SocialIcon url="https://www.facebook.com/" bgColor='rgba(255, 255, 255, 0.748)' className='social-icon'/>
+                    <SocialIcon url="https://www.gmail.com" bgColor='rgba(255, 255, 255, 0.748)' className='social-icon'/>
                 </div>
             </section>
         </div>
