@@ -19,7 +19,7 @@ const App = (props) => {
             <Route path='/home'>
               <Home />
             </Route>
-            <Route path='/products'>
+            <Route path='/products/:category'>
               <Products />
             </Route>
             <Route path='/about'>

@@ -28,8 +28,15 @@ const Navbar = (props) => {
             <section className='navbar-list-container'>
                 <ul className='navbar-list'>
                     <li onClick={() => toRoute('/home')}>HOME</li>
-                    <li onClick={() => toRoute('/products')}>PRODUCTS</li>
-                    <li onClick={() => toRoute('/about')}>ABOUT US</li>
+                    <div className='products-div'>
+                    <li onClick={() => toRoute('/products/all')}>PRODUCTS</li>
+                    <div className='products-list'>
+                        <a onClick={()=>toRoute('/products/whey-protein')}>WHEY PROTEIN</a>
+                        <a onClick={()=>toRoute('/products/mass-gainer')}>MASS GAINER</a>
+                        <a onClick={()=>toRoute('/products/multi-vitamins')}>MULTI VITAMINS</a>
+                    </div>
+                    </div>
+                    <li onClick={() => toRoute('/about')}>FIND US</li>
                 </ul>
                 {productsView ?
                     <AddShoppingCartIcon style={ShoppingCartStyle} /> :
