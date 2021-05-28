@@ -1,0 +1,38 @@
+@font-face {
+    font-family: sacramento;
+    src: url(../font/Sacramento-Regular.ttf);
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+}
+
+.products-partners{
+    display: grid;
+    grid-template-columns: 19vw  auto;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.products-partners div{
+    max-height: 25vh;
+    max-width: 18vw;
+}
+
+.products-partners img{
+    height: 25vh;
+    width: 18vw;
+}
+
+.partners h1{
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.734);
+    text-align: center;
+}
+
+.partners{
+    margin-top: 5vh;
+}

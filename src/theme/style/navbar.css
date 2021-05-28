@@ -11,6 +11,7 @@
 
 .navbar-list-container{
     width: 100%;
+    display: flex
 }
 
 .navbar-list{
@@ -45,6 +46,24 @@ li:hover{
     border-style: dotted;
     display: grid;
     place-items: center;
+    transition: 0.5s;
+}
+
+.logo-wrapper-products{
+    max-height: 5vh;
+    max-width: 10vh;
+    border-radius: 100px;
+    font-family: lelushka;
+    font-size: 20px;
+    margin-left: 5vw;
+    margin-top: 1vh;
+    border: 2px solid rgba(0, 0, 0, 0.734);
+    border-style: dotted;
+    display: grid;
+    place-items: center;
+    background-color: #1abc9cd0;
+    color: white;
+    transition: 0.5s;
 }
 
 .logo-wrapper img{
