@@ -1,7 +1,7 @@
 import React from 'react'
 import { ProductCard } from 'react-ui-cards'
 import '../../theme/style/cardStyle/card.css'
-const Card = (props) =>{
+const Card = ({productName, buttonText}) =>{
     return(
      <>
    <ProductCard
@@ -13,9 +13,9 @@ const Card = (props) =>{
           price='$65'
           productName='WHEY PROTEIN'
           description='Donec lectus nulla, molestie aliquam nisl vitae, tempor placerat magna. Morbi dignissim in felis vel aliquet.'
-          buttonText='Add to cart'
+          buttonText= {buttonText}
           rating={3}
-          url='https://github.com/nukeop'
+          url={`http://localhost:3000/info/${productName?.replace(' ','-')}`}
         />
      </>
     )
