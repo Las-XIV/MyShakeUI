@@ -30,10 +30,10 @@ const Products = (props) => {
                     dotListClass="custom-dot-list-style"
                     itemClass="carousel-item-padding-40-px"
                 >
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    <Card productName='Whey Protein' buttonText='More Informations'/>
+                    <Card productName='Whey Protein' buttonText='More Informations'/>
+                    <Card productName='Whey Protein' buttonText='More Informations'/>
+                    <Card productName='Whey Protein' buttonText='More Informations'/>
                 </Carousel>
             </div>
             <div className='partners'>

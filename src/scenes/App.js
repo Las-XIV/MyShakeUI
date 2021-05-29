@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './Home'
 import About from './About'
 import Products from './Products'
+import ProductInfo from './ProductInfo'
 import Navbar from './Nav-Bar'
 import Footer from './Footer'
 import '../theme/style/app.css'
@@ -21,6 +22,9 @@ const App = (props) => {
             </Route>
             <Route path='/products/:category'>
               <Products />
+            </Route>
+            <Route path='/info/:product'>
+              <ProductInfo />
             </Route>
             <Route path='/about'>
               <About />
