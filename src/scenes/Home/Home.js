@@ -48,7 +48,7 @@ const Home = (props) => {
                         <p>The Best Source For The Best Athletes .</p>
                     </div>
                     <div>
-                        <div className='explore-container' onClick={()=> history.push('/products')}>
+                        <div className='explore-container' onClick={()=> history.push('/products/all')}>
                             <h2 className='explore'>EXPLORE NOW</h2>
                         </div>
                     </div>
