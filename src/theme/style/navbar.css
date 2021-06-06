@@ -102,3 +102,12 @@ li:hover{
     cursor: pointer;
     color: rgba(255, 196, 0, 0.673)
 }
+
+.payment-popup{
+    position: relative;
+    margin-top: 5vh;
+}
+
+.basket-space{
+    width: 100%
+}
