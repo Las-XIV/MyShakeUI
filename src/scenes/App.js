@@ -17,6 +17,9 @@ const App = (props) => {
         </section>
         <section className='main'>
           <Switch>
+          <Route exact path='/'>
+              <Home />
+            </Route>
             <Route path='/home'>
               <Home />
             </Route>

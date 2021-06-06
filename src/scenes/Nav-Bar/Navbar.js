@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+import Basket from '../../components/Basket'
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import '../../theme/style/navbar.css'
@@ -42,11 +43,11 @@ const Navbar = (props) => {
                 </ul>
 
                 <Popup trigger={productsView ?
-                    <AddShoppingCartIcon style={ShoppingCartStyle} /> :
+                    <AddShoppingCartIcon style={ShoppingCartStyle}/> :
                     <ShoppingCartIcon style={ShoppingCartStyle} />
-                    } position="left center">
+                    } position="left center" className='basket-space'>
                     <div className='payment-popup'>
-                        
+                        <Basket />
                     </div>
                 </Popup>
             </section>

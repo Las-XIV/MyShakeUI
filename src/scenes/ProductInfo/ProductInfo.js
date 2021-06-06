@@ -21,7 +21,9 @@ const ProductInfo = () =>{
         <Card />
         </div> 
         <div>
-            informations
+            <p>
+                
+            </p>
             <button className="buy-button" onClick={()=>buy()}>
                 Add To Card
             </button>
