@@ -29,7 +29,7 @@ const About = (props) => {
           <AnyReactComponent
             lat={59.955413}
             lng={30.337844}
-            text={<AssistantIcon style={{color: 'rgba(255, 196, 0, 0.843)'}}/>}
+            text={<AssistantIcon style={{color: 'rgba(255, 196, 0, 0.843)', fontSize: '30px'}}/>}
           />
         </GoogleMapReact>
         </div></center>
